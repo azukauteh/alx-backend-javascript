@@ -39,9 +39,36 @@ git clone https://github.com/azukauteh/alx-backend-javascript
 cd 0x00-es6-basics
 ```
 
+Setup
+Install NodeJS 12.11.x
+(in your home directory):
+
+```bash
+curl -sL https://deb.nodesource.com/setup_12.x -o nodesource_setup.sh
+sudo bash nodesource_setup.sh
+sudo apt install nodejs -y
+```
+
+```bash
+$ nodejs -v
+v12.11.1
+$ npm -v
+6.11.3
+```
+
+
 ## Usage
 
 Explore each section of the project to understand and practice the covered ES6 features. Code examples and explanations are provided to facilitate learning.
+
+Requirements
+
+- All your files will be executed on Ubuntu 18.04 LTS using NodeJS 12.11.x
+- All your files should end with a new line
+- Your code should use the js extension
+- Your code will be tested using the Jest Testing Framework
+- Your code will be analyzed using the linter ESLint along with specific rules that we’ll provide
+- All of your functions must be exported
 
 ```bash
 # Navigate to a specific section
