@@ -1,4 +1,3 @@
-
 module.exports = {
   env: {
     browser: false,
@@ -28,11 +27,13 @@ module.exports = {
       'LabeledStatement',
       'WithStatement',
     ],
+    'comma-dangle': ['error', 'always-multiline'],
   },
-  overrides:[
+  overrides: [
     {
       files: ['*.js'],
       excludedFiles: 'babel.config.js',
-    }
-  ]
+    },
+  ],
 };
+
