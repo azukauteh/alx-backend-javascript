@@ -20,8 +20,6 @@ This directory contains TypeScript code for the ALX Backend JavaScript project, 
   - [Merging Declarations](#merging-declarations)
   - [Using Ambient Namespace to Import External Libraries](#using-ambient-namespace-to-import-external-libraries)
   - [Basic Nominal Typing](#basic-nominal-typing)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Description
 
