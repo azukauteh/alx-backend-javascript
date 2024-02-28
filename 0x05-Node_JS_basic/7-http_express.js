@@ -7,7 +7,7 @@ const express = require('express');
 const app = express();
 const port = 1245;
 
-// Function to count students from the CSV file
+
 function countStudents(path) {
   return new Promise((resolve, reject) => {
     fs.readFile(path, 'utf8', (err, records) => {
@@ -21,7 +21,7 @@ function countStudents(path) {
         content.forEach((record) => {
           const field = record.split(',');
           // Check if the field is not empty
-	    if (field.length > 1) { 
+          if (field.length > 1) {
             if (field[3] === 'CS') {
               cslist.push(field[0]);
             } else if (field[3] === 'SWE') {
@@ -65,4 +65,3 @@ app.listen(port, () => {
 });
 
 module.exports = app;
-
