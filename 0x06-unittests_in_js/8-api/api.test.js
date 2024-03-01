@@ -3,21 +3,22 @@
  * api.test.js
  *
  */
-const request = require('supertest');
-const app = require('./api');
+const request = require('request');
 const chai = require('chai');
 
 const { expect } = chai;
 
 describe('Index page', () => {
-  it('responds with status code 200 and correct result', (done) => {
-    request(app)
-      .get('/')
-      .expect(200)
-      .end((err, res) => {
-        if (err) return done(err);
-        expect(res.text).to.equal('Welcome to the payment system');
+  it('response', (done) => {
+    try {
+      request('http://localhost:7865/', (err, res, body) => {
+        if (err) throw err;
+        expect(body).to.be.equal('Welcome to the payment system');
+        expect(res.statusCode).to.be.equal(200);
         done();
       });
+    } catch (err) {
+      done(err);
+    }
   });
 });
