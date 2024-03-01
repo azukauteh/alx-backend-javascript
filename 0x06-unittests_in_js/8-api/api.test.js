@@ -3,8 +3,6 @@
  * api.test.js
  *
  */
-
-
 const request = require('supertest');
 const app = require('./api');
 const chai = require('chai');
@@ -23,4 +21,3 @@ describe('Index page', () => {
       });
   });
 });
-
